@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Patisserie Pro</title>
+	<link rel="stylesheet"  href="ppstyles.css" type="text/css" />
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+	<link rel="stylesheet" href="https://use.typekit.net/pga2aoq.css">
+</head>
+
+<body onkeydown='getKeyAndMove(event)'>
+<div id="MainWindow" class="window">
+
+
+	<div id="pastriesmaterial" class="rowpastriesmaterial">
+		<div id="cherries" class="blockpastriesmaterial">
+			<img id="cherry1" src="img/cherry.png" style="width:10px; position: absolute; height:10px; left: 70px; top: 30px" />
+			<img id="cherry2" src="img/cherry.png" style="width:10px; position: absolute; height:10px; left: 60px; top: 20px" />
+			<img id="cherry3" src="img/cherry.png" style="width:10px; position: absolute; height:10px; left: 70px; top: 30px" />
+			<img id="cherry4" src="img/cherry.png" style="width:10px; position: absolute; height:10px; left: 50px; top: 40px" />
+			<img id="cherry5" src="img/cherry.png" style="width:10px; position: absolute; height:10px; left: 40px; top: 20px" />
+			<img id="cherry6" src="img/cherry.png" style="width:10px; position: absolute; height:10px; left: 60px; top: 30px" />
+		</div>
+		<div id="stars" class="blockpastriesmaterial">
+			<img id="star1" src="img/star.png" style="width:20px; position: absolute; height:20px;  left: 130px; top: -20px" />
+			<img id="star2" src="img/star.png" style="width:20px; position: absolute; height:20px;  left: 117px; top: -23px" />
+			<img id="star3" src="img/star.png" style="width:20px; position: absolute; height:20px;  left: 163px; top: -32px" />
+			<img id="star4" src="img/star.png" style="width:20px; position: absolute; height:20px;  left: 150px; top: -35px" />
+			<img id="star5" src="img/star.png" style="width:20px; position: absolute; height:20px;  left: 135px; top: -30px" />
+			<img id="star6" src="img/star.png" style="width:20px; position: absolute; height:20px;  left: 143px; top: -28px" />
+		</div>
+		<div id="tealfrosting" class="blockpastriesmaterial">
+			<img src="img/tealfrost.png" style="width:104px; height:23px; position: absolute; left: 170px; top: 30px" />
+		</div>
+		<div id="orangefrosting" class="blockpastriesmaterial">
+			<img src="img/orangefrost.png" style="width:104px; height:23px; position: absolute; "/>
+		</div>
+		<div id="pinkfrosting" class="blockpastriesmaterial">
+			<img  src="img/pinkfrost.png" style="width:104px; height:23px; height:23px; position: absolute;"/>
+		</div>
+		<div id="chocolatecake" class="blockpastriesmaterial">
+			<img src="img/chocake.png" style="width:104px; height:23px; position: absolute; left: 455px; top: 30px"/>
+		</div>
+		<div id="vanillacake" class="blockpastriesmaterial">
+			<img src="img/vancake.png" style="width:104px; height:23px; position: absolute; left: 540px;"/>
+		</div>
+		<div id="cinnamonroll" class="blockpastriesmaterial">
+			<img src="img/roll.png" style="position: absolute; left: 640px; top: 25px" />
+		</div>
+		<div id="bonbon" class="blockpastriesmaterial">
+			<img src="img/bonbon.png"  style="position: absolute; left: 5px; top: -30px"/>
+		</div>
+		<div id="eclair" class="blockpastriesmaterial">
+			<img src="img/eclair.png" style="position: absolute; left: 720px; top: -20px"/>
+		</div>
+		<div id="macaron" class="blockpastriesmaterial">
+			<img src="img/macaron.png"  style="position: absolute; left: 45px; top: -33px"/>
+		</div>
+	</div>
+
+	<div id="orderslist" class="row">
+		<div id="cakerequest1" class="block">
+			<img src="img/cakerequest1.png" class="orderimage"/>
+		</div>
+		<div id="cakerequest2" class="block">
+			<img src="img/cakerequest2.png" class="orderimage"/>
+		</div>
+		<div id="macaronrequest" class="block">
+			<img src="img/macaronrequest.png" class="orderimage"/>
+		</div>
+		<div id="eclairrequest" class="block">
+			<img src="img/eclairrequest.png" class="orderimage"/>
+		</div>
+		<div id="bonbonrequest" class="block">
+			<img src="img/bonbonrequest.png" class="orderimage"/>
+		</div>
+		<div id="rollrequest" class="block">
+			<img src="img/rollrequest.png" class="orderimage"/>
+		</div>
+	</div>
+
+
+	<div id="startWindow" class="window">
+		<h1>Patisserie
+			<br>Pro
+		</h1>
+		<img src="img/start.jpg">
+		<button id="playStart" class="prettyButton">Play!</button>
+		<button id="rulesStart" class="prettyButton">Instructions</button>
+	</div>
+
+	<div id="rulesWindow" class="window">
+		<img src="img/rules.jpg"/>
+
+		<button id="backRules" class="prettyButton">Back to the Start</button>
+		<button id="playRules" class="prettyButton">Play!</button>
+	</div>
+
+	<div id="loseWindow" class="window">
+		<h1>Game
+			<br> Over!
+		</h1>
+		<img src="img/lose.jpg"/>
+
+		<button id="startBack1" class="prettyButton">Back to Start</button>
+		<button id="playLose1" class="prettyButton">Play Again!</button>
+	</div>
+
+	<div id="winWindow" class="window">
+		<img src="img/win.jpg"/>
+		<button id="startBack2" class="prettyButton">Back to Start</button>
+		<button id="playLose2" class="prettyButton">Back to Play</button>
+	</div>
+
+	<div id="countdown">
+		<h2>Time:<div id="timer">60</div></h2>
+	</div>
+
+	<div id="addMoney">
+		<h2>Cash:$<div id="money">0</div></h2>
+	</div>
+
+
+	<div id="gamewindow">
+	</div>
+
+	<img id="player" src="img/puppy.png" />
+
+
+
+</div>
+
+
+<script type="text/javascript" src="patisserie.js"></script>
+</body>
+</html>
