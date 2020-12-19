@@ -69,3 +69,64 @@ body {
     background-color: #B5E6D2;
     visibility: hidden;/*do this property for the rulesWindow, loseWindow and the winWindow*/
 }
+
+#rulesStart {
+    background-color: #FFB8C3;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    width: 200px;
+    position:absolute;
+    display: inline-block;
+    left: 700px;
+    top: 270px;
+    z-index: 995;
+}
+#playStart {
+    background-color: #FFB8C3;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    width: 150px;
+    position:absolute;
+    display: inline-block;
+    left: 530px;
+    top: 270px;
+    z-index: 995;
+}
+
+#backRules {
+    background-color: #FEC3AF;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 80%;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    height: 65px;
+    width: 150px;
+    position:absolute;
+    display: inline-block;
+    left: 70px;
+    top: 45px;
+    z-index: 995;
+}
