@@ -130,3 +130,93 @@ body {
     top: 45px;
     z-index: 995;
 }
+
+#playRules {
+    background-color: #FEC3AF;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 80%;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    height: 50px;
+    width: 150px;
+    position:absolute;
+    display: inline-block;
+    left: 475px;
+    top: 420px;
+    z-index: 995;
+}
+
+
+#startBack1 {
+    background-color: #FEE8B2;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 80%;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    height: 65px;
+    width: 170px;
+    position:absolute;
+    display: inline-block;
+    left: 235px;
+    top: 420px;
+    z-index: 995;
+}
+#playLose1 {
+    background-color: #FEE8B2;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 80%;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    height: 65px;
+    width: 150px;
+    position:absolute;
+    display: inline-block;
+    left: 70px;
+    top: 420px;
+    z-index: 995;
+}
+
+
+
+#startBack2 {
+    background-color: #FEE8B2;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 80%;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    height: 65px;
+    width: 170px;
+    position:absolute;
+    display: inline-block;
+    left: 235px;
+    top: 420px;
+    z-index: 995;
+}
