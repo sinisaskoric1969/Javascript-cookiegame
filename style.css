@@ -220,3 +220,144 @@ body {
     top: 420px;
     z-index: 995;
 }
+
+#playLose2 {
+    background-color: #FEE8B2;
+    color: #f00;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 80%;
+    color: #FFFFFF;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 5 20px;
+    height: 65px;
+    width: 150px;
+    position:absolute;
+    display: inline-block;
+    left: 70px;
+    top: 420px;
+    z-index: 995;
+}
+
+
+
+
+.row {
+    visibility: hidden;
+    position:absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 995;
+    top: 30px;
+    left: -120px;
+}
+.block {
+    width: 110px;
+}
+
+.orderimage {
+    width: 100px;
+    height: 90px;
+}
+
+
+
+.rowpastriesmaterial {
+    visibility: hidden;
+    position:absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 995;
+    top: 480px;
+    left: 0px;
+}
+.blockpastriesmaterial {
+    width: 110px;
+    z-index: 999;
+}
+
+.orderimagepastriesmaterial{
+    width: 100px;
+    height: 90px;
+}
+
+
+
+
+
+#pastriesmaterial {
+    visibility: hidden;
+    position: absolute;
+    z-index: 980;
+}
+#countdown {
+    position: absolute;
+    border: none;
+    padding: .2em;
+    float: right;
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    top:-35px;
+    left:775px;
+    color: #FFFFFF;
+    z-index: 960;
+}
+#timer {
+    border: none;
+    padding: .2em;
+    float: right;
+    visibility: hidden;
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+#addMoney {
+    position: absolute;
+    visibility: hidden;
+    top: -35px;
+    left: 590px;
+    float: right;
+    float: top;
+    padding: .2em;
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    color: #FFFFFF;
+    z-index: 900;
+}
+#money {
+    margin: 0 0 0 15px;
+    float: right;
+    float: top;
+}
+
+
+.pinkfrost {
+    position: absolute;
+    visibility: visible;
+    left: 240px;
+    top:  270px;
+    z-index: 999;
+}
+
+
+#player {
+    position: absolute;
+    visibility: visible;
+    left: 240px;
+    top:  270px;
+    z-index: 800;
+}
