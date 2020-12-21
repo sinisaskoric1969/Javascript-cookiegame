@@ -62,3 +62,61 @@ function PlayStart() {
     objbonbon.style.visibility="visible";
 
 }
+
+//------------TIMER CODE------------
+function changeTime() {
+    time--;
+    timerBox.innerHTML = time.toString();
+    if(time==0){
+        clearInterval(timeInterval);
+        showLose(); // showwin();
+    }
+}
+
+function showLose() {
+    loseWindows.style.visibility="visible";
+    bgamewindow.style.visibility = "hidden";
+    timerBox.style.visibility = "hidden";
+    objplayer.style.visibility="hidden";
+    orderslist.style.visibility="hidden";
+    pastriesmateriallist.style.visibility="hidden";
+    countdownobj.style.visibility="hidden";
+    timerBox.style.visibility="hidden";
+
+    oborangefrosting.style.visibility="hidden";
+    objpinkfrost.style.visibility="hidden";
+    objtealfrost.style.visibility="hidden";
+    objchocake.style.visibility="hidden";
+    objvanillacake.style.visibility="hidden";
+    objroll.style.visibility="hidden";
+    objeclair.style.visibility="hidden";
+    objstars.style.visibility="hidden";
+    objcherries.style.visibility="hidden";
+    Objmacaron.style.visibility="hidden";
+    objbonbon.style.visibility="hidden";
+
+}
+
+function showwin() {
+    winWindows.style.visibility="visible";
+    bgamewindow.style.visibility = "hidden";
+    timerBox.style.visibility = "hidden";
+    objplayer.style.visibility="hidden";
+    orderslist.style.visibility="hidden";
+    pastriesmateriallist.style.visibility="hidden";
+    countdownobj.style.visibility="hidden";
+    timerBox.style.visibility="hidden";
+
+    oborangefrosting.style.visibility="hidden";
+    objpinkfrost.style.visibility="hidden";
+    objtealfrost.style.visibility="hidden";
+    objchocake.style.visibility="hidden";
+    objvanillacake.style.visibility="hidden";
+    objroll.style.visibility="hidden";
+    objeclair.style.visibility="hidden";
+    objstars.style.visibility="hidden";
+    objcherries.style.visibility="hidden";
+    Objmacaron.style.visibility="hidden";
+    objbonbon.style.visibility="hidden";
+
+}
