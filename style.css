@@ -361,3 +361,29 @@ body {
     top:  270px;
     z-index: 800;
 }
+
+#player.flip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph;
+    filter: fliph;
+}
+
+
+#gamewindow {
+    background-color: #FEC3AF;
+    color: #FFFFFF;
+    margin: 0px;
+    position:absolute;
+    background-image: url(img/game.jpg);
+    background-position: center bottom, left top;
+    background-repeat: no-repeat;
+    width: 980px;
+    height: 550px;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    visibility: hidden;
+}
