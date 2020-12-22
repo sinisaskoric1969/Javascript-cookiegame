@@ -366,3 +366,65 @@ function selectmaterial(){
     //objbonbon       -710 -35      |   0 315
 
 
+function getKeyAndMove(e){
+    var key_code=e.which||e.keyCode;
+    switch(key_code){
+        case 37: //left arrow key
+            moveLeft();
+            break;
+        case 38: //Up arrow key
+            moveUp();
+            break;
+        case 39: //right arrow key
+            moveRight();
+            break;
+        case 40: //down arrow key
+            moveDown();
+            break;
+        case 32: //down arrow key
+            selectmaterial();
+    }
+}
+
+
+
+
+
+window.onkeyup = function(e) {
+    objplayer.setAttribute("src","img/puppy.png");
+
+};
+
+function moveLeft(){
+    objplayer.style.left=parseInt(objplayer.style.left)-5 +'px';
+    objplayer.setAttribute("src","img/puppy.gif");
+    objplayer.setAttribute("class","flip");
+    if(objSelect!=null)
+        objSelect.style.left=parseInt(objSelect.style.left)-5 +'px';
+}
+function moveUp(){
+    objplayer.style.top=parseInt(objplayer.style.top)-5 +'px';
+    objplayer.setAttribute("src","img/back.png");
+    objplayer.classList.remove("flip");
+    if(objSelect!=null)
+        objSelect.style.top=parseInt(objSelect.style.top)-5 +'px';
+}
+function moveRight(){
+    objplayer.style.left=parseInt(objplayer.style.left)+5 +'px';
+    objplayer.setAttribute("src","img/puppy.gif");
+    objplayer.classList.remove("flip");
+    if(objSelect!=null)
+        objSelect.style.left=parseInt(objSelect.style.left)+5 +'px';
+}
+function moveDown(){
+    objplayer.style.top=parseInt(objplayer.style.top)+5 +'px';
+    objplayer.setAttribute("src","img/puppy.png");
+    objplayer.classList.remove("flip");
+    if(objSelect!=null)
+        objSelect.style.top=parseInt(objSelect.style.top)+5 +'px';
+}
+
+
+
+
+window.onload=init;
