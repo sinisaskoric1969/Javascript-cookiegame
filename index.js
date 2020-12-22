@@ -258,3 +258,111 @@ function init(){
 
 
 }
+
+function selectmaterial(){
+    console.clear();
+    //console.log(oborangefrosting.style.left +"  "+ objplayer.style.left);
+    //console.log(oborangefrosting.style.top +"  "+ objplayer.style.top);
+    //console.log( objplayer.style.left);
+
+    const  offset = 20;
+    let lfx = parseInt(objplayer.style.left, 10);
+    let lfy = parseInt(objplayer.style.top, 10);
+
+    console.log( lfx + "  " + lfy );
+
+    if(objSelect==null)
+    {
+        //------------ oborangefrosting --------------
+        if (lfx>(260-offset)  &&  lfx<(260+offset)  && lfy>(355-offset) &&  lfy<(355+offset) ) {
+            objSelect = oborangefrosting;
+            console.log("oborangefrosting");
+        }
+
+        //------------ objpinkfrost --------------
+        if (lfx>(350-offset)  &&  lfx<(350+offset)  && lfy>(325-offset) &&  lfy<(325+offset) ) {
+            objSelect = objpinkfrost;
+            console.log("objpinkfrost");
+        }
+
+        //------------ objtealfrost --------------
+        if (lfx>(170-offset)  &&  lfx<(170+offset)  && lfy>(375-offset) &&  lfy<(375+offset) ) {
+            objSelect = objtealfrost;
+            console.log("objtealfrost");
+        }
+
+        //------------ objchocake --------------
+        if (lfx>(455-offset)  &&  lfx<(455+offset)  && lfy>(365-offset) &&  lfy<(365+offset) ) {
+            objSelect = objchocake;
+            console.log("objchocake");
+        }
+
+        //------------ objvanillacake --------------
+        if (lfx>(540-offset)  &&  lfx<(540+offset)  && lfy>(325-offset) &&  lfy<(325+offset) ) {
+            objSelect = objvanillacake;
+            console.log("objvanillacake");
+        }
+
+        //------------ objroll --------------
+        if (lfx>(625-offset)  &&  lfx<(625+offset)  && lfy>(355-offset) &&  lfy<(355+offset) ) {
+            objSelect = objroll;
+            console.log("objroll");
+        }
+
+        //------------ objeclair --------------
+        if (lfx>(695-offset)  &&  lfx<(695+offset)  && lfy>(310-offset) &&  lfy<(310+offset) ) {
+            objSelect = objeclair;
+            console.log("objeclair");
+        }
+
+        //------------ objbonbon --------------
+        if (lfx>(-30-offset)  &&  lfx<(-30+offset)  && lfy>(320-offset) &&  lfy<(320+offset) ) {
+            objSelect = objbonbon;
+            console.log("objbonbon");
+        }
+
+        //------------ Objmacaron --------------
+        if (lfx>(5-offset)  &&  lfx<(5+offset)  && lfy>(305-offset) &&  lfy<(305+offset) ) {
+            objSelect = Objmacaron;
+            console.log("Objmacaron");
+        }
+
+        //------------ objstars1 --------------
+        if (lfx>(90-offset)  &&  lfx<(90+offset)  && lfy>(315-offset) &&  lfy<(315+offset) ) {
+            objSelect = objstars1;
+            console.log("objstars1");
+        }
+
+        //------------ objcherrie1 --------------
+        if (lfx>(20-offset)  &&  lfx<(20+offset)  && lfy>(360-offset) &&  lfy<(360+offset) ) {
+            objSelect = objcherrie1;
+            console.log("objcherrie1");
+        }
+
+
+    }
+    else
+    {
+        objSelect = null;
+    }
+
+
+
+
+
+
+
+
+    //oborangefrosting   0 260      |  15 335
+    //objpinkfrost       0 350      | -15 325
+    //objpinkfrost       0 170      | -15 380
+    //objchocake      -440 455      |  0  370
+    //objvanillacake  -530 535      | -10 330
+    //objroll         -610 625      | -10 350
+    //objeclair       -810 695      | -10 310
+    //objstars         -90 90       |   5 305
+    //objcherries      20  20       |   0 355
+    //Objmacaron      -890 5        |   0 310
+    //objbonbon       -710 -35      |   0 315
+
+
